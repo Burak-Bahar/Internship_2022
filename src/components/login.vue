@@ -93,8 +93,8 @@ export default {
   data(){
     return{
       name: '',
-      email: "ss_erol122@ktb.gov.tr",
-      password: "Lalalups1",
+      email: "********@ktb.gov.tr",
+      password: "**********",
       reg: false,
     }
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="container" style="margin-top: 100px">
     <div class="row  mt-5">
-      <div class="col-md-4 offset-4 card card-primary p-3 border">
+      <div class="col-md-4 card card-primary p-3 border">
         <h2 class="text-center mb-3 mt-3">Update Hotel</h2>
         <form @submit.prevent>
           <div v-if="found">
@@ -12,7 +12,7 @@
             </div>
             <div class="form-group">
               <label>Description</label>
-              <textarea placeholder="Description" type="text" v-model="hotel.description" class="form-control"></textarea>
+              <textarea placeholder="Description" v-model="hotel.description" class="form-control"></textarea>
             </div>
             <div class="form-group">
               <label>Location</label>

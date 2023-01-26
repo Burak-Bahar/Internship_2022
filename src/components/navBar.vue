@@ -9,7 +9,7 @@
           </li>
         </ul>
         <ul>
-          <li v-if="admin" @click="register_Hotel" class="list-group-item list-group-item-action py-3 ripple" aria-current="true" style="cursor: pointer;">
+          <li  @click="register_Hotel" class="list-group-item list-group-item-action py-3 ripple" aria-current="true" style="cursor: pointer;">
             Register Hotel
           </li>
           <li @click="search_Hotel" class="list-group-item list-group-item-action py-3 ripple" aria-current="true" style="cursor: pointer">
@@ -21,7 +21,7 @@
           <li @click="ResetPassword" class="list-group-item list-group-item-action py-3 ripple" aria-current="true" style="cursor: pointer">
             Reset Password
           </li>
-          <li v-if="User" @click="LogOut" class="list-group-item list-group-item-action py-3 ripple" aria-current="true" style="cursor: pointer">
+          <li  @click="LogOut" class="list-group-item list-group-item-action py-3 ripple" aria-current="true" style="cursor: pointer">
             Log Out
         </li>
         </ul>

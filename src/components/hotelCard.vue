@@ -1,29 +1,25 @@
 <template>
+    <img @click="hotel_info" class="card-img-top" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/241278020.jpg?k=12c938d831bde550c37f79efa9652fcd3c30610565a1b6ccaa168ac305b69f21&o=&hp=1" alt="">
+    <div class="card-body" >
+      <div @click="hotel_info">
+      <h5 class="card-title">{{hotelInformation.name.toUpperCase() }}</h5>
+        <br>
+      <p class="card-text">
+        {{ hotelInformation.location }}
+        <br>
+        <br>
+        {{ hotelInformation.description }}
+      </p>
+        <br>
 
-
-            <img @click="hotel_info" class="card-img-top" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/241278020.jpg?k=12c938d831bde550c37f79efa9652fcd3c30610565a1b6ccaa168ac305b69f21&o=&hp=1">
-            <div class="card-body" >
-              <div @click="hotel_info">
-              <h5 class="card-title">{{hotelInformation.name.toUpperCase() }}</h5>
-                <br>
-              <p class="card-text">
-                {{ hotelInformation.location }}
-                <br>
-                <br>
-                {{ hotelInformation.description }}
-              </p>
-                <br>
-
-              </div>
-              <div class="button-container d-flex  flex-column align-items-center" v-if="admin">
-                <button type="submit" class="btn btn-block mb-2 btn-primary"  @click="UpdatePage">
-                  Update
-                </button>
-              </div>
-              <div><delete_hotel :hotel-id="hotelInformation.id"></delete_hotel></div>
-            </div>
-
-
+      </div>
+      <div class="button-container d-flex  flex-column align-items-center" v-if="admin">
+        <button type="submit" class="btn btn-block mb-2 btn-primary"  @click="UpdatePage">
+          Update
+        </button>
+      </div>
+      <div><delete_hotel :hotel-id="hotelInformation.id"></delete_hotel></div>
+    </div>
 </template>
 
 <script>
