@@ -1,6 +1,7 @@
 # system
 
-###The project is not deployed.
+The project is not deployed.
+Since there are no backend some pages will not show what was intended.
 
 ## Project setup
 ```
